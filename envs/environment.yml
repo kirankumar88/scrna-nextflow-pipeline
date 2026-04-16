@@ -1,0 +1,39 @@
+name: scrna-pipeline
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.10
+
+  # Core scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+
+  # Single-cell analysis
+  - scanpy
+  - anndata
+
+  # Clustering / graph tools
+  - umap-learn
+  - leidenalg
+  - igraph
+
+  # File formats
+  - h5py
+
+  # Pathway / enrichment
+  - gseapy
+
+  # Optional but useful
+  - pip
+
+  - pip:
+      - harmonypy   # batch correction (optional but good)
